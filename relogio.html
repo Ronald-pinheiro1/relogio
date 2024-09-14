@@ -60,8 +60,7 @@
      <script>
           let res = document.querySelector('p#resp')
           let alarme = document.querySelector('p#alarme')
-          const N24 = [
-               "zero","um","dois","três","quatro","cinco","seis","sete","oito","nove","dez","onze","doze","treze","quatorze","quinze","dezesseis","dezessete","dezoito","dezenove","vinte","vinte e um","vinte dois", "vinte e três","vinte e quatro"]
+      
           const N60 = [
                "zero","um","dois","três","quatro","cinco","seis","sete","oito","nove","dez","onze","doze","treze","quatorze","quinze","dezesseis","dezessete","dezoito","dezenove","vinte","vinte e um","vinte dois", "vinte e três","vinte e quatro","vinte e cinco","vinte e seis","vinte e sete","vinte e oito","vinte nove","trinta","trinta e um","trinta e dois","trinta e três","trinta e quatro","trinta e cinco","seis","trinta e sete","trinta e oito","trinta e nove","quarenta","quarenta e um","quarenta e dois","quarenta e três","quarenta e quatro","quarenta e cinco","quarenta e seis","quarenta e sete","quarenta e oito","quarenta e nove","cinquenta","cinquenta e um","cinquenta e dois","cinquenta e três","cinquenta e quatro","cinquenta e cinco","cinquenta e seis","cinquenta e sete","cinquenta e oito","cinquenta e nove","sessenta"];
 
@@ -70,7 +69,7 @@
                res.innerHTML=''
                res.innerHTML+=`<span>${rel.getHours()}</span>:<span>${rel.getMinutes()}</span>:<span>${rel.getSeconds()}</span>`
 
-               alarme.innerHTML = `${N24[rel.getHours()]} horas, ${N60[rel.getMinutes()]} minutos e  ${N60[rel.getSeconds()]} segundos`
+               alarme.innerHTML = `${N60[rel.getHours()]} horas, ${N60[rel.getMinutes()]} minutos e  ${N60[rel.getSeconds()]} segundos`
                
           }
               
