@@ -52,7 +52,7 @@ span{
          
 }
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:600px) {
     #resp{
          margin: 0% 40% 0% 40%;
     }
