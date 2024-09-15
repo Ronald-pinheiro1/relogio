@@ -26,7 +26,6 @@ function tempo(){
 
     alarme.innerHTML = `${N60[rel.getHours()]} horas, ${N60[rel.getMinutes()]} minutos e  ${N60[rel.getSeconds()]} segundos`;
 }
-
 //saldação e calendário doa dia
 (function(){
     let rel = new Date();
