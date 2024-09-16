@@ -32,12 +32,15 @@ function tempo(){
     let h = rel.getHours();
     let saldacao = 'Bom dia, Visitante! Vamos dar uma olhadinha no tempo?';
     
-    if(h >= 12 && h < 18)saldacao = "Boa tarde, Visitante! Vamos dar uma olhadinha no tempo?";
+    if(h >= 0 && h <= 4) saldacao = 'É de madrugada visitante, vamos dormir!';
     
-    if(h >= 18 && h < 0)saldacao = 'Boa noite, Visitante! Vamos dar uma olhadinha no tempo?';
+    if(h >= 12)saldacao = "Boa tarde, Visitante! Vamos dar uma olhadinha no tempo?";
+    
+    if(h >=18)saldacao = 'Boa noite, Visitante! Vamos dar uma olhadinha no tempo?';
 
 
     sal.innerHTML = `<strong>${saldacao}</strong>`;
+
     data.innerHTML=`<i>Hoje é ${semana[rel.getDay()]}, ${rel.getDate()} ${meses[rel.getMonth()]} de ${rel.getFullYear()}</i>`;
 })();
 
