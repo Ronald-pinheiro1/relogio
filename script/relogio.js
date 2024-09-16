@@ -17,7 +17,7 @@ function tempo(){
     let m = rel.getMinutes();
     let s = rel.getSeconds();
     res.innerHTML=''
-
+    
     if(h <= 9) h= num[h];
     if(m <= 9) m= num[m];
     if(s <= 9) s= num[s];
